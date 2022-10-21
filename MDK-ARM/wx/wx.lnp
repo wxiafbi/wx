@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"wx\startup_stm32f103xe.o"
+"wx\main.o"
+"wx\gpio.o"
+"wx\dma.o"
+"wx\usart.o"
+"wx\stm32f1xx_it.o"
+"wx\stm32f1xx_hal_msp.o"
+"wx\stm32f1xx_hal_gpio_ex.o"
+"wx\stm32f1xx_hal_tim.o"
+"wx\stm32f1xx_hal_tim_ex.o"
+"wx\stm32f1xx_hal_uart.o"
+"wx\stm32f1xx_hal.o"
+"wx\stm32f1xx_hal_rcc.o"
+"wx\stm32f1xx_hal_rcc_ex.o"
+"wx\stm32f1xx_hal_gpio.o"
+"wx\stm32f1xx_hal_dma.o"
+"wx\stm32f1xx_hal_cortex.o"
+"wx\stm32f1xx_hal_pwr.o"
+"wx\stm32f1xx_hal_flash.o"
+"wx\stm32f1xx_hal_flash_ex.o"
+"wx\stm32f1xx_hal_exti.o"
+"wx\system_stm32f1xx.o"
+--strict --scatter "wx\wx.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "wx.map" -o wx\wx.axf
