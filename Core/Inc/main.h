@@ -53,7 +53,8 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void DMA_Usart_Send(uint8_t *buf,uint8_t len);
+void DMA_Usart1_Read(uint8_t *Data,uint8_t len);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
